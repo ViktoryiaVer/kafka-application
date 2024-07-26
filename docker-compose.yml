@@ -24,6 +24,7 @@ services:
     volumes:
       - zookeeper-data:/var/lib/zookeeper/data
       - zookeeper-log:/var/lib/zookeeper/log
+      - zookeeper-secrets:/etc/zookeeper/secrets
   kafka:
     image: confluentinc/cp-kafka:latest
     depends_on:
@@ -39,6 +40,7 @@ services:
       KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
     volumes:
       - broker-data:/var/lib/kafka/data
+      - broker-secrets:/etc/kafka/secrets
 
 networks:
   kafka-app-network:
@@ -47,4 +49,6 @@ volumes:
   db-data:
   zookeeper-data:
   zookeeper-log:
+  zookeeper-secrets:
   broker-data:
+  broker-secrets:
