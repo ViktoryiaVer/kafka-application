@@ -4,6 +4,7 @@ import lombok.Getter;
 import org.apache.kafka.clients.admin.AdminClientConfig;
 import org.apache.kafka.clients.admin.NewTopic;
 import org.apache.kafka.common.config.TopicConfig;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.kafka.config.TopicBuilder;
@@ -15,6 +16,8 @@ import java.util.Map;
 @Getter
 @Configuration
 public class KafkaConfig {
+    @Value("${kafkaapp.topic-name}")
+    private String topicName;
 
     @Bean
     public KafkaAdmin admin() {
@@ -27,7 +30,7 @@ public class KafkaConfig {
 
     @Bean
     public NewTopic topic() {
-        return TopicBuilder.name("${kafka-test.topic-name}")
+        return TopicBuilder.name(topicName)
                 .partitions(1)
                 .replicas(1)
                 .config(TopicConfig.MESSAGE_TIMESTAMP_TYPE_DOC, "CreateTime")

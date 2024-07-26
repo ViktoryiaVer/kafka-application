@@ -18,9 +18,7 @@ import java.sql.Timestamp;
 public class KafkaConsumer {
     private final ActivityService activityService;
 
-    @KafkaListener(
-            topics = "${kafka-test.topic-name}",
-            groupId = "${spring.kafka.consumer.group-id}")
+    @KafkaListener(topics = "${kafkaapp.topic-name}", groupId = "${spring.kafka.consumer.group-id}")
     public void listenToComment(ConsumerRecord<String, CommentDto> commentRecord) {
         log.info("Received a message: {}", commentRecord);
         Activity activity =
