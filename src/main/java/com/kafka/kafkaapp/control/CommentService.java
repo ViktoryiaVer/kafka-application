@@ -1,7 +1,7 @@
-package com.kafka.test.kafka_app.control;
+package com.kafka.kafkaapp.control;
 
-import com.kafka.test.kafka_app.model.entity.Comment;
-import com.kafka.test.kafka_app.model.repository.CommentRepository;
+import com.kafka.kafkaapp.model.entity.Comment;
+import com.kafka.kafkaapp.model.repository.CommentRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

@@ -1,6 +1,6 @@
-package com.kafka.test.kafka_app.model.repository;
+package com.kafka.kafkaapp.model.repository;
 
-import com.kafka.test.kafka_app.model.entity.Comment;
+import com.kafka.kafkaapp.model.entity.Comment;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.UUID;

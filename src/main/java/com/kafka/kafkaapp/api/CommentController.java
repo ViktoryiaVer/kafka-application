@@ -1,10 +1,10 @@
-package com.kafka.test.kafka_app.api;
+package com.kafka.kafkaapp.api;
 
-import com.kafka.test.kafka_app.api.dto.CommentDto;
-import com.kafka.test.kafka_app.control.CommentService;
-import com.kafka.test.kafka_app.kafka.KafkaProducer;
-import com.kafka.test.kafka_app.mapper.CommentMapper;
-import com.kafka.test.kafka_app.model.entity.Comment;
+import com.kafka.kafkaapp.api.dto.CommentDto;
+import com.kafka.kafkaapp.control.CommentService;
+import com.kafka.kafkaapp.kafka.KafkaProducer;
+import com.kafka.kafkaapp.mapper.CommentMapper;
+import com.kafka.kafkaapp.model.entity.Comment;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;

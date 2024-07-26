@@ -1,7 +1,7 @@
-package com.kafka.test.kafka_app.mapper;
+package com.kafka.kafkaapp.mapper;
 
-import com.kafka.test.kafka_app.api.dto.CommentDto;
-import com.kafka.test.kafka_app.model.entity.Comment;
+import com.kafka.kafkaapp.api.dto.CommentDto;
+import com.kafka.kafkaapp.model.entity.Comment;
 import org.mapstruct.Mapper;
 import org.mapstruct.MappingConstants;
 

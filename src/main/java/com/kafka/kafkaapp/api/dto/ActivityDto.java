@@ -1,6 +1,6 @@
-package com.kafka.test.kafka_app.api.dto;
+package com.kafka.kafkaapp.api.dto;
 
-import com.kafka.test.kafka_app.model.entity.ActivityType;
+import com.kafka.kafkaapp.model.entity.ActivityType;
 import lombok.Builder;
 import lombok.Value;
 

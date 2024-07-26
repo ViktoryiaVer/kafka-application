@@ -1,9 +1,9 @@
-package com.kafka.test.kafka_app.kafka;
+package com.kafka.kafkaapp.kafka;
 
-import com.kafka.test.kafka_app.api.dto.CommentDto;
-import com.kafka.test.kafka_app.control.ActivityService;
-import com.kafka.test.kafka_app.model.entity.Activity;
-import com.kafka.test.kafka_app.model.entity.ActivityType;
+import com.kafka.kafkaapp.control.ActivityService;
+import com.kafka.kafkaapp.api.dto.CommentDto;
+import com.kafka.kafkaapp.model.entity.Activity;
+import com.kafka.kafkaapp.model.entity.ActivityType;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.kafka.clients.consumer.ConsumerRecord;

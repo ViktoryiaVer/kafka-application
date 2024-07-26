@@ -1,7 +1,7 @@
-package com.kafka.test.kafka_app.mapper;
+package com.kafka.kafkaapp.mapper;
 
-import com.kafka.test.kafka_app.api.dto.ActivityDto;
-import com.kafka.test.kafka_app.model.entity.Activity;
+import com.kafka.kafkaapp.api.dto.ActivityDto;
+import com.kafka.kafkaapp.model.entity.Activity;
 import org.mapstruct.Mapper;
 import org.mapstruct.MappingConstants;
 

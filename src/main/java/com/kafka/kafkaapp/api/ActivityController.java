@@ -1,8 +1,8 @@
-package com.kafka.test.kafka_app.api;
+package com.kafka.kafkaapp.api;
 
-import com.kafka.test.kafka_app.api.dto.ActivityDto;
-import com.kafka.test.kafka_app.control.ActivityService;
-import com.kafka.test.kafka_app.mapper.ActivityMapper;
+import com.kafka.kafkaapp.api.dto.ActivityDto;
+import com.kafka.kafkaapp.control.ActivityService;
+import com.kafka.kafkaapp.mapper.ActivityMapper;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

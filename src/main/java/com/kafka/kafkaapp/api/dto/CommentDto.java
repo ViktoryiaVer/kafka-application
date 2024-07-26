@@ -1,4 +1,4 @@
-package com.kafka.test.kafka_app.api.dto;
+package com.kafka.kafkaapp.api.dto;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;

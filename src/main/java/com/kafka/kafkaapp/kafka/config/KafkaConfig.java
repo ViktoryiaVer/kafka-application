@@ -1,4 +1,4 @@
-package com.kafka.test.kafka_app.kafka.config;
+package com.kafka.kafkaapp.kafka.config;
 
 import lombok.Getter;
 import org.apache.kafka.clients.admin.AdminClientConfig;

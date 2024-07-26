@@ -1,6 +1,6 @@
-package com.kafka.test.kafka_app.kafka;
+package com.kafka.kafkaapp.kafka;
 
-import com.kafka.test.kafka_app.api.dto.CommentDto;
+import com.kafka.kafkaapp.api.dto.CommentDto;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.kafka.clients.producer.ProducerRecord;

@@ -1,4 +1,4 @@
-package com.kafka.test.kafka_app.model.entity;
+package com.kafka.kafkaapp.model.entity;
 
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
