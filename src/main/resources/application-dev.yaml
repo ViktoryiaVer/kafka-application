@@ -12,7 +12,7 @@ spring:
       key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
       value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
     properties:
-      spring.json.trusted.packages: com.kafka.test.kafka_app.api.dto
+      spring.json.trusted.packages: com.kafka.kafkaapp.api.dto
     producer:
       acks: -1
       bootstrap-servers: localhost:29092
