@@ -24,7 +24,7 @@ public class CommentController {
     public CommentDto addComment(@RequestBody CommentDto commentDto) {
         Comment savedComment = commentService.saveComment(commentMapper.toEntity(commentDto));
         CommentDto savedCommentDto = commentMapper.toDto(savedComment);
-        kafkaProducer.sendComment(kafkaConfig.getTopicName(), savedCommentDto);
+        kafkaProducer.sendComment(kafkaConfig.getCommentTopicName(), savedCommentDto);
         return savedCommentDto;
     }
 }

@@ -19,4 +19,4 @@ spring:
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
       value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
 kafkaapp:
-  topic-name: comments
+  comment-topic-name: comments
